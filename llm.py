@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import HuggingFaceInstructEmbeddings
-from langchain.vectorstores import Chroma
+from langchain.vectorstores import Chroma, FAISS
 from langchain.llms.openai import OpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
@@ -37,7 +37,7 @@ def get_vectorstore(text_chunks):
     # embeddings = GPT4AllEmbeddings()
     embeddings = OpenAIEmbeddings()
     # embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-xl")
-    vectorstore = Chroma.from_texts(texts=text_chunks, embedding=embeddings)
+    vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
 
 
