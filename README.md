@@ -1,7 +1,3 @@
-Thank you for providing the code for your "Chat with PDF" project. Based on this, I'll refine the README.md file to better reflect the specific functionalities and technologies used in your project.
-
----
-
 # Chat with PDF 📚🤖
 
 ## Introduction
@@ -61,7 +57,3 @@ This project is under the [MIT License](LICENSE.md). Feel free to explore, modif
 ## Acknowledgments 🙏
 
 Special thanks to our instructors and peers in the NLP course for their invaluable guidance and support in bringing this project to fruition.
-
----
-
-This README includes specific references to your code, emphasizing the key components and their roles in the project. You can modify or expand any section as needed!
